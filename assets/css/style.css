@@ -1,0 +1,44 @@
+:root {
+    --azul-escuro: #171a21;
+    --ciano-escuro: #184352;
+    --fundo-claro: #2a475e;
+    --fundo-escuro: #1b2838;
+    --preto: #333333;
+    --branco: #fefefe;
+    --letra-branca: #deeefa;
+    --letra-azul: #60b5e6;
+}
+.app {
+    background: #f1f1f1;
+    display: grid;  
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-areas:
+    "cabecalho"
+    "conteudo"
+    "rodape";
+    grid-template-columns: auto;
+    grid-template-rows: 50px auto auto;
+}
+
+.cabecalho {
+    background: var(--azul-escuro);
+    align-items: center;
+    display: flex;
+    grid-area: cabecalho;
+    padding: 0 2rem;
+}
+
+.conteudo {
+    background: var(--azul-escuro);
+    grid-area: conteudo;
+    padding: 0 2rem;
+}
+
+.rodape {
+    background: linear-gradient(var(--fundo-claro), var(--fundo-escuro));
+    color: var(--letra-branca);
+    font-size: .8rem;
+    padding: 1rem;
+    text-align: center;
+    grid-area: rodape;
+}
